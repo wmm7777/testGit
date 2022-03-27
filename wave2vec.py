@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from transformers import Wav2Vec2Processor, Wav2Vec2Model
-
+import time
 
 class WAVE2VEC(nn.Module):
     def __init__(self, feature_dim, num_classes=4, size='base'):
